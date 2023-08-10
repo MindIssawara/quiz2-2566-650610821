@@ -14,10 +14,12 @@ export const PostOwner = (props) => {
 
       <span>{props.textPost}</span>
 
-      <div className="d-flex align-items-center gap-1">
-        <img src="/like.svg" width={20}></img>
-        <span className="text-muted">100 คน</span>
-      </div>
+      {props.num > 0 && (
+        <div className="d-flex align-items-center gap-1">
+          <img src="/like.svg" width={20}></img>
+          <span className="text-muted">{props.num} คน</span>
+        </div>
+      )}
       <hr className="m-0 border" />
     </div>
   );

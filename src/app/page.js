@@ -20,6 +20,7 @@ export default function HomePage() {
           name="Issawara Kongsricharoen 650610821"
           srcImgPro="/profileImages/mind.jpg"
           textPost="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
+          num={100}
         />
 
         {comments.map((u) => (
